@@ -26,29 +26,3 @@
 </div>
 
 </body>
-In index.js, we’ll now change the link for each list item to use the new page instead of the project’s GitHub repository. As you may notice, we are passing the necessary project data (the username and project name) as URL variables.
-
-function loadRepos() {
-    $.ajax("https://api.github.com/legacy/repos/search/javascript").done(function(data) {
-        var i, repo;
-        $.each(data.repositories, function (i, repo) {
-            $("#allRepos").append("<li><a href='repo-detail.html?owner=" + repo.username + "&name=" + repo.name + "'>"
-            + "<h4>" + repo.name + "</h4>"
-            + "<p>" + repo.username + "</p></a></li>");
-        });
-        $('#allRepos').listview('refresh');
-    });
-}
-In order to parse the URL variables on the subsequent page, I am going to use a function called getURLVars(). I am not sure who the original author of this function is but it is frequently reproduced on various sites when searching for parsing URL variables with jQuery.
-
-function getUrlVars() {
-    var vars = [], hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-    for(var i = 0; i < hashes.length; i++)
-    {
-        hash = hashes[i].split('=');
-        vars.push(hash[0]);
-        vars[hash[0]] = hash[1];
-    }
-    return vars;
-}

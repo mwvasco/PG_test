@@ -82,3 +82,15 @@ function loadRepos() {
         $('#allRepos').listview('refresh');
     });
 }
+
+$('#reposDetail').live('pageshow', function(event) {
+    var owner = getUrlVars().owner;
+    var name = getUrlVars().name;
+    loadRepoDetail(owner,name);
+});
+
+function loadRepoDetail(owner,name) {
+     $.ajax("https://api.github.com/repos/" + owner + "/" + name).done(function(data) {
+         console.log(data);
+     });
+}

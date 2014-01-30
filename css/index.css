@@ -114,22 +114,10 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-.ui-page .ui-header {
+.ui-header {
    background: #e80045; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #e80045 0%, #ff0084 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e80045), color-stop(100%,#ff0084)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg,  #e80045 0%,#ff0084 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg,  #e80045 0%,#ff0084 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg,  #e80045 0%,#ff0084 100%); /* IE10+ */
-background: linear-gradient(135deg,  #e80045 0%,#ff0084 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80045', endColorstr='#ff0084',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
+   }
 
-li.ui-tabs-active > a {
-    background-color: rgb(51, 136, 204)!important;
-    border-color: rgb(51, 136, 204) !important;
-    color: rgb(255, 255, 255) !important;
-    text-shadow: 0 1px 0 rgb(0, 85, 153) !important;
-}
+
 
 

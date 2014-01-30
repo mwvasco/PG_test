@@ -114,7 +114,7 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-.ui-header {
+.ui-page .ui-header {
    background: #e80045; !important /* Old browsers */
    }
 

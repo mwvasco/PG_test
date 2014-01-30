@@ -90,7 +90,7 @@ function txSuccessFave() {
 function disableSaveButton() {
     // change the button text and style
     var ctx = $("#saveBtn").closest(".ui-btn");
-    $('span.ui-btn-text',ctx).text("Saved").closest(".ui-btn-inner").addClass("ui-btn-up-b");
+    $('span.ui-btn-text',ctx).text("Liked").closest(".ui-btn-inner").addClass("ui-btn-up-b");
 
     $("#saveBtn").unbind("click", saveFave);
 }

@@ -115,7 +115,7 @@ h1 {
 }
 
 .ui-header {
-   background: #e80045; /* Old browsers */
+   background: #e80045; !important /* Old browsers */
    }
 
 

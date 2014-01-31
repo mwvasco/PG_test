@@ -120,7 +120,7 @@ h1 {
 
 
 .ui-header {
-    background: #ff0084; /* Old browsers */
+    background: #ff0084 !important; /* Old browsers */
 }
 
 
